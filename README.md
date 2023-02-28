@@ -2,7 +2,7 @@
 
 Submitted by: **Liana Adaza**
 
-**BeReal** is an app that ... [TODO] 
+**BeReal** is an app that mimics the real trending BeReal app. In this app, users can sign up/login to and select photos from their photo album to post to their feed. All user authentication and data are saved and accessed via a remote custom Parse backend server.
 
 Time spent: **6** hours spent in total
 
@@ -32,9 +32,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/izHl6sF.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://files.catbox.moe/j8ef3v.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Video created with Mac Screenshot and uploaded with Imgur
+Video created with Mac Screenshot and uploaded with Catbox
 
 ## Notes
 
