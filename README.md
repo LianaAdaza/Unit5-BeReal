@@ -2,7 +2,7 @@
 
 Submitted by: **Liana Adaza**
 
-**BeReal** is an app that mimics the real trending BeReal app. In this app, users can sign up/login to and select photos from their photo album to post to their feed. All user authentication and data are saved and accessed via a remote custom Parse backend server.
+**BeReal** is an app that mimics the real trending BeReal app. In this app, users can sign up/login and select photos from their photo album to post to their feed. All user authentication and data are saved and accessed via a remote custom Parse backend server.
 
 Time spent: **6** hours spent in total
 
