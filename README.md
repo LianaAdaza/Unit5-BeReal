@@ -32,9 +32,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://files.catbox.moe/j8ef3v.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2FmZTQ4N2E2YTZiNmFkM2U0ZjA1YmYzOGRkNzY2MTVhNjYxN2I3OCZjdD1n/b7CHKHr9RPQgAVMgoL/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Video created with Mac Screenshot and uploaded with Catbox
+Video created with Mac Screenshot and uploaded with GIPHY
 
 ## Notes
 
