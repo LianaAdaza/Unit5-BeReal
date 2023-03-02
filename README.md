@@ -32,9 +32,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2FmZTQ4N2E2YTZiNmFkM2U0ZjA1YmYzOGRkNzY2MTVhNjYxN2I3OCZjdD1n/b7CHKHr9RPQgAVMgoL/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href="https://www.loom.com/share/cbfc3e95c875492b894cedd69e019f69">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cbfc3e95c875492b894cedd69e019f69-with-play.gif">
+  </a>
 
-Video created with Mac Screenshot and uploaded with GIPHY
+Video created and uploaded with Loom
 
 ## Notes
 
