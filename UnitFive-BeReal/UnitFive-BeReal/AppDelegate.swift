@@ -7,9 +7,10 @@
 
 import UIKit
 import ParseSwift
+import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,6 +43,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                assertionFailure("Error saving: \(error)")
 //            }
 //        }
+        
+        // TODO: Users receive a notification to remind them to post.
+        // Ask user to give our app permission to send them notifications.
+        UNUserNotificationCenter.current().delegate = self
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+                    if granted {
+                        print("✅ User gave permissions for local notifications")
+                    }
+                }
+        
+        // Configure the notification's content.
+        let content = UNMutableNotificationContent()
+        content.title = "BeReal"
+        content.body = "Remember to upload todays's photo 👀"
+        content.sound = UNNotificationSound.default
+         
+        // Deliver the notification in five seconds.
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger) // Schedule the notification.
+        let center = UNUserNotificationCenter.current()
+        center.add(request) { (error : Error?) in
+            if error != nil {
+                print("Error = \(error?.localizedDescription ?? "error local notification")")
+                
+            }
+        }
 
         return true
     }

@@ -6,8 +6,6 @@
 //
 
 import UIKit
-
-// TODO: P1 1 - Import Parse Swift
 import ParseSwift
 
 class FeedViewController: UIViewController {
@@ -50,10 +48,19 @@ class FeedViewController: UIViewController {
         // 4. TODO: Pt 2 - Only include results created yesterday onwards
         // 5. TODO: Pt 2 - Limit max number of returned posts
 
+        // Get the date for yesterday. Adding (-1) day is equivalent to subtracting a day.
+        // NOTE: `Date()` is the date and time of "right now".
+        let yesterdayDate = Calendar.current.date(byAdding: .day, value: (-1), to: Date())!
                            
+//        let query = Post.query()
+//            .include("user")
+//            .order([.descending("createdAt")])
+        
         let query = Post.query()
             .include("user")
             .order([.descending("createdAt")])
+            .where("createdAt" >= yesterdayDate) // <- Only include results created yesterday onwards
+            .limit(10) // <- Limit max number of returned posts to 10
 
         // Find and return posts that meet query criteria (async)
         query.find { [weak self] result in
